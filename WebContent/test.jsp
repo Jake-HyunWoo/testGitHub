@@ -3,7 +3,11 @@
 <%@ page import="java.util.*"%>
 <%
 	Date date = new Date();
-
+	date.setTime(System.currentTimeMillis());
+	
+	int year = date.getYear();
+	int month = date.getMonth();
+	int day = date.getDate();
 %>
 <!DOCTYPE html>
 <html>
